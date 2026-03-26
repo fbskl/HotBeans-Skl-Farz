@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Hot Beans Web – Trainees</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #000000; /* black background */
+      color: #ffffff; /* white text */
+    }
+
+    /* NAVBAR */
+    .navbar {
+      width: 100%;
+      background-color: #000000;
+      padding: 15px 0;
+      border-bottom: 1px solid #222222;
+    }
+
+    .nav-content {
+      width: 90%;
+      max-width: 1100px;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    /* LOGO AREA */
+    .logo-area {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .logo-circle {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      overflow: hidden;
+      background-color: #ffffff;
+    }
+
+    .logo-circle img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .logo-text {
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: white;
+    }
+
+    .nav-links a {
+      margin-left: 15px;
+      color: white;
+      text-decoration: none;
+      font-size: 0.95rem;
+    }
+
+    .nav-links a:hover {
+      color: #e63946; /* red hover */
+    }
+
+    /* MAIN SECTION */
+    .trainee-section {
+      width: 90%;
+      max-width: 1100px;
+      margin: 60px auto;
+      padding: 20px 0;
+    }
+
+    .section-title {
+      font-size: 2rem;
+      font-weight: bold;
+      margin-bottom: 15px;
+      color: white;
+    }
+
+    .section-text {
+      color: #cccccc;
+      margin-bottom: 30px;
+      max-width: 800px;
+      line-height: 1.6;
+    }
+
+    /* TRAINEE CARDS */
+    .trainee-cards {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 25px;
+    }
+
+    .trainee-card {
+      flex: 1;
+      min-width: 260px;
+      background-color: #111111;
+      padding: 20px;
+      border-radius: 8px;
+      border: 1px solid #222222;
+      text-align: center;
+    }
+
+    .trainee-photo {
+      width: 90px;
+      height: 90px;
+      border-radius: 50%;
+      overflow: hidden;
+      margin: 0 auto 15px auto;
+      background-color: #ffffff;
+    }
+
+    .trainee-photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .trainee-name {
+      font-size: 1.2rem;
+      font-weight: bold;
+      margin-bottom: 8px;
+      color: #e63946; /* red name */
+    }
+
+    .trainee-info {
+      color: #cccccc;
+      font-size: 0.95rem;
+      line-height: 1.5;
+    }
+
+    /* FOOTER */
+    .footer {
+      text-align: center;
+      padding: 20px 0;
+      margin-top: 40px;
+      color: #888888;
+      font-size: 0.9rem;
+      border-top: 1px solid #222222;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <div class="navbar">
+    <div class="nav-content">
+
+      <div class="logo-area">
+        <div class="logo-circle">
+          <img src="beanielogord.png" alt="Logo">
+        </div>
+        <div class="logo-text">Hot Beans Web</div>
+      </div>
+
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="company.html">Company</a>
+        <a href="jobs.html">Jobs</a>
+        <a href="courses.html">Courses</a>
+        <a href="apply.html">Apply</a>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- TRAINEE SECTION -->
+  <div class="trainee-section">
+
+    <div class="section-title">Meet Our Trainees</div>
+
+    <div class="section-text">
+      Our trainees come from a range of backgrounds, but they all share one thing in common: a passion for web development. 
+      At Hot Beans Web, we help them build real experience, improve their skills, and prepare for careers in the tech industry.
+    </div>
+
+    <div class="trainee-cards">
+
+      <!-- TRAINEE 1 -->
+      <div class="trainee-card">
+        <div class="trainee-photo">
+          <img src="trainee1.jpg" alt="Trainee 1">
+        </div>
+        <div class="trainee-name">Aisha Khan</div>
+        <div class="trainee-info">
+          Specialises in front end development. Skilled in HTML, CSS, and responsive design.
+        </div>
+      </div>
+
+      <!-- TRAINEE 2 -->
+      <div class="trainee-card">
+        <div class="trainee-photo">
+          <img src="trainee2.jpg" alt="Trainee 2">
+        </div>
+        <div class="trainee-name">James Smith</div>
+        <div class="trainee-info">
+          Focuses on JavaScript and UI components. Enjoys building interactive features.
+        </div>
+      </div>
+
+      <!-- TRAINEE 3 -->
+      <div class="trainee-card">
+        <div class="trainee-photo">
+          <img src="trainee3.jpg" alt="Trainee 3">
+        </div>
+        <div class="trainee-name">Maria Lopez</div>
+        <div class="trainee-info">
+          Interested in full stack development. Works with both front end and back end tools.
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- FOOTER -->
+  <div class="footer">
+    © Hot Beans Web — Careers for aspiring web developers
+  </div>
+
+</body>
+</html>

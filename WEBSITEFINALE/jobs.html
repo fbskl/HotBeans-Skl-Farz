@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Hot Beans Web – Jobs</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #000000; /* black background */
+      color: #ffffff; /* white text */
+    }
+
+    /* NAVBAR */
+    .navbar {
+      width: 100%;
+      background-color: #000000;
+      padding: 15px 0;
+      border-bottom: 1px solid #222222;
+    }
+
+    .nav-content {
+      width: 90%;
+      max-width: 1100px;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    /* LOGO AREA */
+    .logo-area {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .logo-circle {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      overflow: hidden;
+      background-color: #ffffff;
+    }
+
+    .logo-circle img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .logo-text {
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: white;
+    }
+
+    .nav-links a {
+      margin-left: 15px;
+      color: white;
+      text-decoration: none;
+      font-size: 0.95rem;
+    }
+
+    .nav-links a:hover {
+      color: #e63946; /* red hover */
+    }
+
+    /* MAIN SECTION */
+    .jobs-section {
+      width: 90%;
+      max-width: 1100px;
+      margin: 60px auto;
+      padding: 20px 0;
+    }
+
+    .section-title {
+      font-size: 2rem;
+      font-weight: bold;
+      margin-bottom: 15px;
+      color: white;
+    }
+
+    .section-text {
+      color: #cccccc;
+      margin-bottom: 30px;
+      max-width: 800px;
+      line-height: 1.6;
+    }
+
+    /* JOB CARDS */
+    .job-cards {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 25px;
+    }
+
+    .job-card {
+      flex: 1;
+      min-width: 260px;
+      background-color: #111111;
+      padding: 20px;
+      border-radius: 8px;
+      border: 1px solid #222222;
+    }
+
+    .job-title {
+      font-size: 1.3rem;
+      font-weight: bold;
+      margin-bottom: 10px;
+      color: #e63946; /* red title */
+    }
+
+    .job-desc {
+      color: #cccccc;
+      margin-bottom: 15px;
+      line-height: 1.5;
+    }
+
+    .job-list {
+      color: #cccccc;
+      margin-bottom: 15px;
+      padding-left: 18px;
+    }
+
+    .apply-btn {
+      padding: 10px 20px;
+      background-color: #e63946;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 0.95rem;
+    }
+
+    .apply-btn:hover {
+      opacity: 0.8;
+    }
+
+    /* FOOTER */
+    .footer {
+      text-align: center;
+      padding: 20px 0;
+      margin-top: 40px;
+      color: #888888;
+      font-size: 0.9rem;
+      border-top: 1px solid #222222;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <div class="navbar">
+    <div class="nav-content">
+
+      <div class="logo-area">
+        <div class="logo-circle">
+          <img src="beanielogord.png" alt="Logo">
+        </div>
+        <div class="logo-text">Hot Beans Web</div>
+      </div>
+
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="company.html">Company</a>
+        <a href="trainees.html">Trainees</a>
+        <a href="courses.html">Courses</a>
+        <a href="apply.html">Apply</a>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- JOBS SECTION -->
+  <div class="jobs-section">
+
+    <div class="section-title">Current Job Openings</div>
+
+    <div class="section-text">
+      Hot Beans Web is always looking for passionate new developers to join our growing team. 
+      Below are our current trainee and junior roles. Each position includes full mentoring, real project experience, and opportunities for progression.
+    </div>
+
+    <div class="job-cards">
+
+      <!-- JOB 1 -->
+      <div class="job-card">
+        <div class="job-title">Junior Front-End Developer</div>
+        <div class="job-desc">
+          Work with our design and development teams to build clean, responsive websites.
+        </div>
+        <ul class="job-list">
+          <li>Good understanding of HTML & CSS</li>
+          <li>Basic JavaScript knowledge</li>
+          <li>Interest in UI/UX design</li>
+        </ul>
+        <button class="apply-btn" onclick="location.href='apply.html'">Apply Now</button>
+      </div>
+
+      <!-- JOB 2 -->
+      <div class="job-card">
+        <div class="job-title">Trainee Web Developer</div>
+        <div class="job-desc">
+          A beginner-friendly role for those who want to learn and grow in a real development environment.
+        </div>
+        <ul class="job-list">
+          <li>Basic coding knowledge</li>
+          <li>Willingness to learn</li>
+          <li>Good teamwork skills</li>
+        </ul>
+        <button class="apply-btn" onclick="location.href='apply.html'">Apply Now</button>
+      </div>
+
+      <!-- JOB 3 -->
+      <div class="job-card">
+        <div class="job-title">Junior Full-Stack Developer</div>
+        <div class="job-desc">
+          Work on both front-end and back-end tasks with support from senior developers.
+        </div>
+        <ul class="job-list">
+          <li>HTML, CSS, JavaScript</li>
+          <li>Basic understanding of databases</li>
+          <li>Problem-solving mindset</li>
+        </ul>
+        <button class="apply-btn" onclick="location.href='apply.html'">Apply Now</button>
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- FOOTER -->
+  <div class="footer">
+    © Hot Beans Web — Careers for aspiring web developers
+  </div>
+
+</body>
+</html>
