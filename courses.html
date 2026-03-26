@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Hot Beans Web – Courses</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #000000; /* black background */
+      color: #ffffff; /* white text */
+    }
+
+    /* NAVBAR */
+    .navbar {
+      width: 100%;
+      background-color: #000000;
+      padding: 15px 0;
+      border-bottom: 1px solid #222222;
+    }
+
+    .nav-content {
+      width: 90%;
+      max-width: 1100px;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    /* LOGO AREA */
+    .logo-area {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .logo-circle {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      overflow: hidden;
+      background-color: #ffffff;
+    }
+
+    .logo-circle img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .logo-text {
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: white;
+    }
+
+    .nav-links a {
+      margin-left: 15px;
+      color: white;
+      text-decoration: none;
+      font-size: 0.95rem;
+    }
+
+    .nav-links a:hover {
+      color: #e63946; /* red hover */
+    }
+
+    /* MAIN SECTION */
+    .courses-section {
+      width: 90%;
+      max-width: 1100px;
+      margin: 60px auto;
+      padding: 20px 0;
+    }
+
+    .section-title {
+      font-size: 2rem;
+      font-weight: bold;
+      margin-bottom: 15px;
+      color: white;
+    }
+
+    .section-text {
+      color: #cccccc;
+      margin-bottom: 30px;
+      max-width: 800px;
+      line-height: 1.6;
+    }
+
+    /* COURSE CARDS */
+    .course-cards {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 25px;
+    }
+
+    .course-card {
+      flex: 1;
+      min-width: 260px;
+      background-color: #111111;
+      padding: 20px;
+      border-radius: 8px;
+      border: 1px solid #222222;
+    }
+
+    .course-title {
+      font-size: 1.3rem;
+      font-weight: bold;
+      margin-bottom: 10px;
+      color: #e63946; /* red title */
+    }
+
+    .course-desc {
+      color: #cccccc;
+      margin-bottom: 15px;
+      line-height: 1.5;
+    }
+
+    .course-btn {
+      padding: 10px 20px;
+      background-color: #e63946;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 0.95rem;
+    }
+
+    .course-btn:hover {
+      opacity: 0.8;
+    }
+
+    /* FOOTER */
+    .footer {
+      text-align: center;
+      padding: 20px 0;
+      margin-top: 40px;
+      color: #888888;
+      font-size: 0.9rem;
+      border-top: 1px solid #222222;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <div class="navbar">
+    <div class="nav-content">
+
+      <div class="logo-area">
+        <div class="logo-circle">
+          <img src="beanielogord.png" alt="Logo">
+        </div>
+        <div class="logo-text">Hot Beans Web</div>
+      </div>
+
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="company.html">Company</a>
+        <a href="trainees.html">Trainees</a>
+        <a href="jobs.html">Jobs</a>
+        <a href="apply.html">Apply</a>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- COURSES SECTION -->
+  <div class="courses-section">
+
+    <div class="section-title">Recommended Courses</div>
+
+    <div class="section-text">
+      These courses are perfect for beginners and aspiring developers who want to build strong foundations in web development. 
+      Each course helps you gain the skills needed to join Hot Beans Web as a trainee or junior developer.
+    </div>
+
+    <div class="course-cards">
+
+      <!-- COURSE 1 -->
+      <div class="course-card">
+        <div class="course-title">HTML & CSS Fundamentals</div>
+        <div class="course-desc">
+          Learn the basics of building websites, including structure, layout, and styling. Perfect for complete beginners.
+        </div>
+        <button class="course-btn" onclick="location.href='https://www.freecodecamp.org/'">View Course</button>
+      </div>
+
+      <!-- COURSE 2 -->
+      <div class="course-card">
+        <div class="course-title">JavaScript Basics</div>
+        <div class="course-desc">
+          Understand how to make websites interactive using JavaScript. Covers variables, functions, and DOM manipulation.
+        </div>
+        <button class="course-btn" onclick="location.href='https://www.codecademy.com/'">View Course</button>
+      </div>
+
+      <!-- COURSE 3 -->
+      <div class="course-card">
+        <div class="course-title">Responsive Web Design</div>
+        <div class="course-desc">
+          Learn how to make websites look great on phones, tablets, and desktops using modern responsive techniques.
+        </div>
+        <button class="course-btn" onclick="location.href='https://www.udemy.com/'">View Course</button>
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- FOOTER -->
+  <div class="footer">
+    © Hot Beans Web — Careers for aspiring web developers
+  </div>
+
+</body>
+</html>

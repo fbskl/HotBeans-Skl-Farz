@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Hot Beans Web – Apply</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #000000; /* black background */
+      color: #ffffff; /* white text */
+    }
+
+    /* NAVBAR */
+    .navbar {
+      width: 100%;
+      background-color: #000000;
+      padding: 15px 0;
+      border-bottom: 1px solid #222222;
+    }
+
+    .nav-content {
+      width: 90%;
+      max-width: 1100px;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    /* LOGO AREA */
+    .logo-area {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .logo-circle {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      overflow: hidden;
+      background-color: #ffffff;
+    }
+
+    .logo-circle img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .logo-text {
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: white;
+    }
+
+    .nav-links a {
+      margin-left: 15px;
+      color: white;
+      text-decoration: none;
+      font-size: 0.95rem;
+    }
+
+    .nav-links a:hover {
+      color: #e63946; /* red hover */
+    }
+
+    /* MAIN SECTION */
+    .apply-section {
+      width: 90%;
+      max-width: 700px;
+      margin: 60px auto;
+      padding: 20px 0;
+    }
+
+    .section-title {
+      font-size: 2rem;
+      font-weight: bold;
+      margin-bottom: 15px;
+      color: white;
+    }
+
+    .section-text {
+      color: #cccccc;
+      margin-bottom: 30px;
+      line-height: 1.6;
+    }
+
+    /* FORM */
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 6px;
+      font-size: 0.95rem;
+      color: white;
+    }
+
+    input, select, textarea {
+      width: 100%;
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid #444444;
+      background-color: #111111;
+      color: white;
+      font-size: 0.95rem;
+    }
+
+    textarea {
+      height: 120px;
+      resize: none;
+    }
+
+    .submit-btn {
+      padding: 12px 25px;
+      background-color: #e63946;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 1rem;
+      margin-top: 10px;
+    }
+
+    .submit-btn:hover {
+      opacity: 0.8;
+    }
+
+    /* FOOTER */
+    .footer {
+      text-align: center;
+      padding: 20px 0;
+      margin-top: 40px;
+      color: #888888;
+      font-size: 0.9rem;
+      border-top: 1px solid #222222;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <div class="navbar">
+    <div class="nav-content">
+
+      <div class="logo-area">
+        <div class="logo-circle">
+          <img src="beanielogord.png" alt="Logo">
+        </div>
+        <div class="logo-text">Hot Beans Web</div>
+      </div>
+
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="company.html">Company</a>
+        <a href="trainees.html">Trainees</a>
+        <a href="jobs.html">Jobs</a>
+        <a href="courses.html">Courses</a>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- APPLY SECTION -->
+  <div class="apply-section">
+
+    <div class="section-title">Apply to Hot Beans Web</div>
+
+    <div class="section-text">
+      Fill out the form below to apply for a trainee or junior developer position at Hot Beans Web. 
+      We will review your application and contact you if you are shortlisted.
+    </div>
+
+    <form>
+
+      <div class="form-group">
+        <label>Full Name</label>
+        <input type="text" placeholder="Enter your full name" required>
+      </div>
+
+      <div class="form-group">
+        <label>Email Address</label>
+        <input type="email" placeholder="Enter your email" required>
+      </div>
+
+      <div class="form-group">
+        <label>Phone Number</label>
+        <input type="text" placeholder="Enter your phone number">
+      </div>
+
+      <div class="form-group">
+        <label>Position Applying For</label>
+        <select required>
+          <option value="">Select a role</option>
+          <option>Junior Front-End Developer</option>
+          <option>Trainee Web Developer</option>
+          <option>Junior Full-Stack Developer</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label>Tell Us About Yourself</label>
+        <textarea placeholder="Write a short personal statement"></textarea>
+      </div>
+
+      <button class="submit-btn">Submit Application</button>
+
+    </form>
+
+  </div>
+
+  <!-- FOOTER -->
+  <div class="footer">
+    © Hot Beans Web — Careers for aspiring web developers
+  </div>
+
+</body>
+</html>
+
