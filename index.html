@@ -148,7 +148,6 @@
     /* ⭐ MOBILE OPTIMISATION ⭐ */
     @media (max-width: 768px) {
 
-      /* Stack navbar vertically */
       .nav-content {
         flex-direction: column;
         gap: 10px;
@@ -160,7 +159,6 @@
         display: inline-block;
       }
 
-      /* Bigger hero text for readability */
       .hero-title {
         font-size: 1.7rem;
       }
@@ -170,7 +168,6 @@
         max-width: 100%;
       }
 
-      /* Buttons easier to tap */
       .btn {
         width: 100%;
         margin-bottom: 10px;
@@ -178,19 +175,17 @@
         padding: 12px;
       }
 
-      /* Video scales better */
       .hero-box video {
         max-height: 220px;
       }
 
-      /* Reduce spacing for mobile */
       .hero {
         margin: 30px auto;
         gap: 20px;
       }
     }
 
-    /* ⭐ SMALL PHONES (iPhone SE, older Androids) ⭐ */
+    /* ⭐ SMALL PHONES ⭐ */
     @media (max-width: 480px) {
 
       .logo-text {
@@ -257,7 +252,14 @@
     </div>
 
     <div class="hero-box">
-      <video autoplay muted loop>
+      <video 
+        autoplay 
+        muted 
+        loop 
+        playsinline 
+        webkit-playsinline 
+        preload="auto"
+      >
         <source src="videos/Htmlwork.mp4" type="video/mp4">
       </video>
     </div>
