@@ -13,6 +13,7 @@
       color: #ffffff; 
     }
 
+    /* NAVBAR */
     .navbar {
       width: 100%;
       background-color: #000000;
@@ -66,6 +67,7 @@
       color: #e63946;
     }
 
+    /* HERO SECTION */
     .hero {
       width: 90%;
       max-width: 1100px;
@@ -94,6 +96,7 @@
       max-width: 450px;
     }
 
+    /* BUTTONS */
     .btn {
       padding: 10px 20px;
       border: none;
@@ -114,6 +117,7 @@
       color: #e63946;
     }
 
+    /* HERO BOX */
     .hero-box {
       flex: 1;
       min-width: 260px;
@@ -123,7 +127,6 @@
       border: 1px solid #222222;
     }
 
-    
     .hero-box video {
       width: 100%;
       max-height: 300px;
@@ -132,6 +135,7 @@
       display: block;
     }
 
+    /* FOOTER */
     .footer {
       text-align: center;
       padding: 10px 0;
@@ -139,6 +143,80 @@
       color: #888888;
       font-size: 0.9rem;
       border-top: 1px solid #222222;
+    }
+
+    /* ⭐ MOBILE OPTIMISATION ⭐ */
+    @media (max-width: 768px) {
+
+      /* Stack navbar vertically */
+      .nav-content {
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .nav-links a {
+        margin: 8px;
+        font-size: 1.1rem;
+        display: inline-block;
+      }
+
+      /* Bigger hero text for readability */
+      .hero-title {
+        font-size: 1.7rem;
+      }
+
+      .hero-subtitle {
+        font-size: 1rem;
+        max-width: 100%;
+      }
+
+      /* Buttons easier to tap */
+      .btn {
+        width: 100%;
+        margin-bottom: 10px;
+        font-size: 1.1rem;
+        padding: 12px;
+      }
+
+      /* Video scales better */
+      .hero-box video {
+        max-height: 220px;
+      }
+
+      /* Reduce spacing for mobile */
+      .hero {
+        margin: 30px auto;
+        gap: 20px;
+      }
+    }
+
+    /* ⭐ SMALL PHONES (iPhone SE, older Androids) ⭐ */
+    @media (max-width: 480px) {
+
+      .logo-text {
+        font-size: 1rem;
+      }
+
+      .nav-links a {
+        font-size: 1rem;
+      }
+
+      .hero-title {
+        font-size: 1.5rem;
+      }
+
+      .hero-subtitle {
+        font-size: 0.95rem;
+      }
+
+      .btn {
+        font-size: 1rem;
+        padding: 10px;
+      }
+
+      .hero-box video {
+        max-height: 180px;
+      }
     }
   </style>
 </head>
@@ -191,3 +269,4 @@
 
 </body>
 </html>
+
